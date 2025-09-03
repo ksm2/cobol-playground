@@ -1,0 +1,25 @@
+name: Makefile CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install GnuCOBOL
+      run: |
+        sudo apt install -y gnucobol4
+        cobc --version
+
+    - name: Make application
+      run: make
+
+    - name: Run application
+      run: make run
