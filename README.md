@@ -19,6 +19,26 @@ brew install gnu-cobol
 ```
 
 
+## Compilation
+
+To compile a COBOL program, use the following command:
+
+```bash
+make all
+```
+
+This will compile the `main.cob` file and generate an executable named `main`.
+
+
+## Execution
+
+To run the compiled COBOL program, use the following command:
+
+```bash
+make run
+```
+
+
 
 [COBOL]: https://en.wikipedia.org/wiki/COBOL
 [GnuCOBOL]: https://gnucobol.sourceforge.io/
