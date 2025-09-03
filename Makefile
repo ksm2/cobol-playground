@@ -15,6 +15,6 @@ $(TARGET_DIR):
 	@mkdir $(TARGET_DIR)
 
 $(TARGET_DIR)/%: $(SRC_DIR)/%.cob $(TARGET_DIR)
-	@$(COBOLC) -x $< -o $@
+	@$(COBOLC) -free -x $< -o $@
 
 .PHONY: all clean run

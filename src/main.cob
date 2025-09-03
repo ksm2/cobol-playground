@@ -1,7 +1,6 @@
-       *> Sample COBOL program
-       IDENTIFICATION DIVISION.
-       PROGRAM-ID. hello.
+IDENTIFICATION DIVISION.
+PROGRAM-ID. hello.
 
-       PROCEDURE DIVISION.
-           DISPLAY "Hello, World!".
-           STOP RUN.
+PROCEDURE DIVISION.
+   DISPLAY "Hello, World!".
+   STOP RUN.
